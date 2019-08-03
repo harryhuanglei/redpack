@@ -1,0 +1,27 @@
+/* 发红包 */
+.redbagsbgmain{ display:none;position:absolute; left:50%; top:50%;margin:-242px 0 0 -173px; width:347px; height:485px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.6);border-radius: 5px; z-index:99999; background:url(../../images/sendregbagsbg.png)}
+#redbagsbgcloes{ position:absolute; top:10px; right:10px;height:16px; width:16px; background:url(../../images/redbags_close.png) no-repeat; cursor:pointer;}
+.redbagsbody{ margin-top:135px;}
+.redbagslist{font-size: 14px;color: #000;padding-left:60px; padding-top:20px; padding-bottom:5px;}
+.redbagslist input {width: 150px; height: 23px;border: 1px #e2e2e2 solid;padding: 2px 10px;color: #a0a0a0;}
+.redbagslist span.beizhu{position: relative;bottom: 25px;}
+.redbagslist textarea {width: 150px; height: 50px; font-weight: 400;padding: 2px 10px;color: #a0a0a0;border: 1px #e2e2e2 solid;}
+.redbagsmoney{text-align: center;font-size: 36px;font-weight: 400;color: #fc4c4c;}
+.redbagsbalance{text-align: center;font-size: 15px;font-weight: 400;color: #000; padding-top:10px;}
+.redbagsbody a.send_redbag{ background: #E83939;color: #fff;line-height: 32px;text-align: Center;border-radius: 5px;width: 100px; display:block; margin-left:auto; margin-right:auto; margin-top:20px;text-shadow: 0 -1px 0 rgba(0,0,0,0.2); font-weight:900;}
+/**红包信息**/
+.redbag_info{ position:absolute;width:380px;height:480px;background:#F9F4F4; display:none; z-index:99999;left: 50%;top: 50%;margin: -240px 0 0 -190px;border-radius: 5px; box-shadow: 0 0 10px 0 rgba(0,0,0,0.6); overflow:hidden;}
+#redbag_infocloes{ position:absolute; top:10px; right:10px;height:16px; width:16px; background:url(../../images/redbags_close.png) no-repeat; cursor:pointer;}
+#redbag_info .redbag_sender{  background: #E83939; color: #fff; height: 60px;  padding: 10px 0px;}
+#redbag_info .redbag_sender ._avatar{  float: left;line-height: 60px; height: 60px;}
+#redbag_info .redbag_sender ._avatar img{height:40px;margin:10px}
+#redbag_info .redbag_sender ._info{height: 60px; float: left;margin-left:10px}
+#redbag_info .redbag_sender ._info ._info_total{  font-size: 18px;color: #ff0; line-height: 36px;}
+#redbag_info .redbag_sender ._info ._info_from{display:block}
+#redbag_info  h1{  line-height: 26px;color: #ADA5A5; padding: 0px 10px; border-bottom: 1px solid #F0EDED; font-size:16px;}
+#redbag_info table{  width: 100%;background: #fff; color:#000000;}
+#redbag_info table tr{height:60px;  border-bottom: 1px solid #F0EDED;}
+#redbag_info table tr td{}
+#redbag_info table tr td span{  font-size: 16px; font-weight: bold;}
+#redbag_info table tr td p{}
+#redbag_info .redbag_get_bottom{ line-height: 26px;color: #ADA5A5; padding: 0px 10px; }

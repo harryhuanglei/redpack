@@ -1,0 +1,27 @@
+@charset "utf-8";
+* { word-wrap:break-word; text-decoration: none; }
+.btn1 {
+    display:inline-block;
+	height:35px;border-radius:5px;
+	background:#2795dc;border:none;cursor:pointer;
+    border-bottom:3px solid #0078b3;*border-bottom:none;
+	color:#fff;
+	font-size:16px;padding:0 10px;
+	text-align:center;outline:none;
+    font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;
+    margin-bottom:2px;
+}
+.btn1:hover{
+    background:#0081c1;
+    border-bottom:3px solid #006698;*border-bottom:none;
+}
+.btn2 {
+    display:inline-block;
+	height:30px;border-radius:5px;
+	background:#09F;border:none;cursor:pointer;
+	border-bottom:3px solid #09F;
+	color:#fff;
+	font-size:16px;padding:0 10px;
+	text-align:center;outline:none;font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;
+    margin-bottom:2px;
+}
