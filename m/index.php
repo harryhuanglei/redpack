@@ -117,10 +117,12 @@ $list .= "<div style='margin: 8px 18px 0px 18px;text-indent:16px;font-size:18px'
     <link rel="stylesheet" href="./css/extension.css?v=<?php echo $time;?>">
     <link rel="stylesheet" href="./css/layui/css/layui.css">
 
-    <link rel="stylesheet" href="./redpack/css/base.css" type="text/css">
+    <link rel="stylesheet" href="./redpack/css/base.css" typ e="text/css">
     <link rel="stylesheet" href="./redpack/index.css" type="text/css">
 
-<script type="text/javascript" src="js/jquery.min.js"></script>A
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">-->
+
 <script src="script/jquery.nicescroll.min.js"></script>
     <script src="css/layui/layer.js"></script>
 <script type="text/javascript" src="js/swfobject.js"></script>
@@ -524,7 +526,7 @@ $('#sharedBtn').click(function(){
         $("#redbagsmoney").text("¥"+$("#money").val());
     });
     //开始下注
-    $('#start').live("click", function(){
+    $('#start').on("click", function(){
         var ty = $('#mType').val();
         $.post(
             'turn.php',
@@ -540,14 +542,18 @@ $('#sharedBtn').click(function(){
             }
         )
     })
+
+
+
+
     //还有
-    $('#have').live("click", function(){
+    $('#have').on("click", function(){
         var send_html = '<img rel="39" src="'+have_img+'" style="" onclick="">';
         MsgSend(2,send_html);
     });
 
     //开奖了
-    $('#kai').live("click", function(){
+    $('#kai').on("click", function(){
         var str=encodeURIComponent($("#messageEditor").html().str_replace());
         if (str == '') {
             layer.msg('开发中');
@@ -567,7 +573,7 @@ $('#sharedBtn').click(function(){
     });
 
     //走势
-    $('#walk').live("click", function(){
+    $('#walk').on("click", function(){
         var ty = $('#mType').val();
         $.post(
             'turn.php',
@@ -596,7 +602,7 @@ $('#sharedBtn').click(function(){
     });
 
     //结束
-    $('#end').live("click", function(){
+    $('#end').on("click", function(){
         var ty = $('#mType').val();
         $.post(
             'turn.php',
@@ -618,7 +624,7 @@ $('#sharedBtn').click(function(){
     })
 
     //结算
-    $('#acc').live("click", function(){
+    $('#acc').on("click", function(){
         var ty = $('#mType').val();
         $.post(
             'account.php',
@@ -635,7 +641,7 @@ $('#sharedBtn').click(function(){
     });
 
     //开奖号码
-    $('#').live("click", function(){
+    $('#').on("click", function(){
         layer.prompt({title: '请输入开奖号码，并确认', formType: 3}, function(text, index){
             //下注
             $.post(
@@ -665,7 +671,7 @@ $('#sharedBtn').click(function(){
     })
 
         //测试
-    $('#tt').live("click", function(){
+    $('#tt').on("click", function(){
         layer.prompt({title: '请输入开奖号码，并确认', formType: 3}, function(text, index){
             //下注
             $.post(
@@ -712,7 +718,7 @@ $('#sharedBtn').click(function(){
 
 
 
-    $('#send_redbag').live("click", function(){
+    $('#send_redbag').on("click", function(){
         var money = $('#money').val();
         var money_total = $('#money_total').val();
         var mark = $('#mark').val();
@@ -748,6 +754,7 @@ $('#sharedBtn').click(function(){
                 var hms="北京时间: "+h+":"+m+":"+s;
                 $('#clock').text(hms);
                 $("#my_account").text(data['account']);
+
                 var rbt = data.robot;
                 console.log(rbt)
                 if (rbt){
